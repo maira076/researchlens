@@ -921,27 +921,6 @@ if uploaded_file is not None:
                 )
 
 
-    # -----------------------------------------------------
-    # EXTRACTED TEXT
-    # -----------------------------------------------------
-
-    with st.expander(
-        "Preview Extracted Paper Text",
-        expanded=False
-    ):
-
-        st.text(
-            cleaned_text[:3500]
-        )
-
-        if len(cleaned_text) > 3500:
-
-            st.caption(
-                "Preview shows only the first part "
-                "of the extracted document."
-            )
-
-
     st.divider()
 
 
